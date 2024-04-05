@@ -7,25 +7,21 @@ package zad1;
 
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.URI;
-import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Currency;
 import java.util.Locale;
-import java.util.Objects;
 import java.util.Optional;
 
 
 public class Service {
-    private static final HttpClient HTTP_CLIENT  = HttpClient.newHttpClient();
+    private static final HttpClient HTTP_CLIENT = HttpClient.newHttpClient();
     private static final String OPEN_WEATHER_API_KEY = "12e0a8a553ff94fb20d32fadf998007e";
     private static final String OPEN_WEATHER_URL_FORMAT = "https://api.openweathermap.org/data/2.5/weather?q=%s,%s&APPID=%s";
     private static final String EXCHANGE_URL = "https://open.er-api.com/v6/latest/";
+    private static final String NBP_URL_FORMAT = "http://api.nbp.pl/api/exchangerates/rates/%s/%s";
     private String country;
 
     public Service(String country) {
@@ -37,7 +33,7 @@ public class Service {
 
         return sendRequest(apiUrl)
                 .map(Object::toString)
-                .orElse("Could not receive weather data :(((");
+                .orElseThrow(() -> new FetchDataException("Could not receive weather data :((("));
     }
 
     public Double getRateFor(String currency) {
@@ -45,11 +41,30 @@ public class Service {
 
         return response
                 .map(resp -> resp.getJSONObject("rates").getDouble(currency))
-                .orElse(-777D);
+                .orElseThrow(() -> new FetchDataException("Could not receive Rate data :((("));
     }
 
     public Double getNBPRate() {
-        return null;
+        String countryCurrencyCode = getCountryCurrencyCode();
+        if (countryCurrencyCode.equals("PLN")) {
+            return 1d;
+        }
+        Double result = getNBP(countryCurrencyCode);
+        return (1.0 / result);
+    }
+
+    private Double getNBP(String currencyCode) {
+        for (char table = 'a'; table <= 'c'; table++) {
+            String url = String.format(NBP_URL_FORMAT, table, currencyCode);
+            Optional<JSONObject> jsonObject = sendRequest(url);
+            if (jsonObject.isPresent()) {
+                return jsonObject.get()
+                        .getJSONArray("rates")
+                        .getJSONObject(0)
+                        .getDouble(table != 'c' ? "mid" : "bid");
+            }
+        }
+        throw new FetchDataException("Could not receive NBP Rate data :(((");
     }
 
     private String getCountryCurrencyCode() {
