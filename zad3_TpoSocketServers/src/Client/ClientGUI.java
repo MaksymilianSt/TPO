@@ -12,19 +12,15 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class ClientGUI extends JFrame implements ActionListener {
-    public static final int MAIN_SERVER_PORT = 9876;
+
     private JTextField wordField, languageField;
     private JButton sendButton;
     private JLabel responseLabel;
-    private ServerSocket serverSocket;
+    private ClientService service;
+
 
     public ClientGUI() {
-        try {
-            serverSocket = new ServerSocket(6666);
-            serverSocket.setSoTimeout(3000);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        service = new ClientService();
         setTitle("Tłumacz");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600, 200);
@@ -59,32 +55,10 @@ public class ClientGUI extends JFrame implements ActionListener {
             String word = wordField.getText();
             String language = languageField.getText().toUpperCase();
 
-            String translatedWord = translateWord(word, language);
+            String translatedWord = service.translateWord(word, language);
             String result = String.format("(PL): %s  -> (%s) : %s", word, language, translatedWord);
 
             responseLabel.setText(result);
-        }
-    }
-
-    private String translateWord(String word, String translateTo) {
-        try {
-            Socket socket = new Socket(InetAddress.getLocalHost(), MAIN_SERVER_PORT);
-            PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
-
-            String req = word + "," + translateTo + "," + serverSocket.getLocalPort();
-            printWriter.println(req);
-            socket.close();
-
-            Socket accept = serverSocket.accept();
-            String response = new BufferedReader(new InputStreamReader(accept.getInputStream()))
-                    .readLine();
-
-            System.out.println("Server response : " + response);
-            accept.close();
-
-            return response;
-        } catch (IOException e) {
-            return " something went wrong:(";
         }
     }
 
