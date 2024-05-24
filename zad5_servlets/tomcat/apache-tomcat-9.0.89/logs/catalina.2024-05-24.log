@@ -1,0 +1,96 @@
+24-May-2024 18:48:00.759 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.89
+24-May-2024 18:48:00.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2024 20:22:11 UTC
+24-May-2024 18:48:00.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.89.0
+24-May-2024 18:48:00.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+24-May-2024 18:48:00.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-35-generic
+24-May-2024 18:48:00.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-May-2024 18:48:00.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+24-May-2024 18:48:00.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+7-post-Ubuntu-0ubuntu222.04.1
+24-May-2024 18:48:00.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+24-May-2024 18:48:00.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 18:48:00.764 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 18:48:00.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-May-2024 18:48:00.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-May-2024 18:48:00.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-May-2024 18:48:00.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-May-2024 18:48:00.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-May-2024 18:48:00.788 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/conf/logging.properties
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 18:48:00.789 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/temp
+24-May-2024 18:48:00.791 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+24-May-2024 18:48:01.110 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-May-2024 18:48:01.139 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [597] milliseconds
+24-May-2024 18:48:01.198 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-May-2024 18:48:01.198 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.89]
+24-May-2024 18:48:01.205 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/manager]
+24-May-2024 18:48:01.473 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/manager] has finished in [267] ms
+24-May-2024 18:48:01.473 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/host-manager]
+24-May-2024 18:48:01.493 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/host-manager] has finished in [20] ms
+24-May-2024 18:48:01.494 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/ROOT]
+24-May-2024 18:48:01.510 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/ROOT] has finished in [16] ms
+24-May-2024 18:48:01.511 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/docs]
+24-May-2024 18:48:01.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/docs] has finished in [17] ms
+24-May-2024 18:48:01.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/examples]
+24-May-2024 18:48:01.713 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/examples] has finished in [184] ms
+24-May-2024 18:48:01.724 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-May-2024 18:48:01.735 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [595] milliseconds
+24-May-2024 18:49:28.502 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-May-2024 18:49:28.503 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-May-2024 18:49:28.506 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-May-2024 18:49:28.527 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-May-2024 18:49:28.539 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+24-May-2024 20:10:45.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.89
+24-May-2024 20:10:45.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 3 2024 20:22:11 UTC
+24-May-2024 20:10:45.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.89.0
+24-May-2024 20:10:45.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+24-May-2024 20:10:45.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.5.0-35-generic
+24-May-2024 20:10:45.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+24-May-2024 20:10:45.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-11-openjdk-amd64
+24-May-2024 20:10:45.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.22+7-post-Ubuntu-0ubuntu222.04.1
+24-May-2024 20:10:45.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Ubuntu
+24-May-2024 20:10:45.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 20:10:45.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 20:10:45.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+24-May-2024 20:10:45.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+24-May-2024 20:10:45.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+24-May-2024 20:10:45.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-May-2024 20:10:45.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-May-2024 20:10:45.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/conf/logging.properties
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89
+24-May-2024 20:10:45.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/temp
+24-May-2024 20:10:45.189 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+24-May-2024 20:10:45.504 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+24-May-2024 20:10:45.533 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [589] milliseconds
+24-May-2024 20:10:45.591 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+24-May-2024 20:10:45.592 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.89]
+24-May-2024 20:10:45.599 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/manager]
+24-May-2024 20:10:45.870 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/manager] has finished in [272] ms
+24-May-2024 20:10:45.871 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/host-manager]
+24-May-2024 20:10:45.891 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/host-manager] has finished in [21] ms
+24-May-2024 20:10:45.892 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/ROOT]
+24-May-2024 20:10:45.899 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [6.0]. Default version will be used.
+24-May-2024 20:10:45.929 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/ROOT] has finished in [37] ms
+24-May-2024 20:10:45.929 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/docs]
+24-May-2024 20:10:45.949 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/docs] has finished in [20] ms
+24-May-2024 20:10:45.950 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/examples]
+24-May-2024 20:10:46.151 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/maks/gakko/tempTPO/tomcat/apache-tomcat-9.0.89/webapps/examples] has finished in [201] ms
+24-May-2024 20:10:46.167 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-May-2024 20:10:46.177 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [643] milliseconds
+24-May-2024 20:13:06.207 WARNING [main] org.apache.catalina.core.StandardServer.await Invalid shutdown command [] received
+24-May-2024 20:13:14.536 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+24-May-2024 20:13:14.536 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+24-May-2024 20:13:14.538 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+24-May-2024 20:13:14.564 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+24-May-2024 20:13:14.573 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
